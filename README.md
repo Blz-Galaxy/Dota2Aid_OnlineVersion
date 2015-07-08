@@ -1,4 +1,4 @@
-# Dota2Aid_OnlineVersion
+# Dota2Aid (Online Version)
 Online Version of Dota2Aid
 2015-3-18
 
