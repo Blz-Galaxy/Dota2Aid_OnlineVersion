@@ -49,7 +49,10 @@ namespace Dota2Aid
                 //声明一个HttpWebRequest请求 
                 request.Timeout = 30000;
                 //设置连接超时时间 
-                request.Headers.Set("Pragma", "no-cache");
+                request.UserAgent = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; QQWubi 133; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CIBA; InfoPath.2)";
+                request.Method = "GET";
+                //request.Headers.Set("Pragma", "no-cache");
+                
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Stream streamReceive = response.GetResponseStream();
                 Encoding encoding = Encoding.GetEncoding("utf-8");
